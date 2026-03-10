@@ -303,7 +303,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="spin">
                     <path d="M21 12a9 9 0 11-6.219-8.56"></path>
                 </svg>
-                Gönderiliyor...
+                Sending...
             `;
             submitBtn.disabled = true;
 
@@ -313,7 +313,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                         <polyline points="20 6 9 17 4 12"></polyline>
                     </svg>
-                    Mesajınız Gönderildi!
+                    Message Sent!
                 `;
                 submitBtn.style.background = 'linear-gradient(135deg, #1B5E20, #2E7D32)';
 

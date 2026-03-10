@@ -198,12 +198,11 @@ input, textarea, select {
 }
 
 .preloader-logo {
-    width: 100px;
+    width: 150px;
     height: auto;
     margin-bottom: 32px;
     animation: pulse 2s ease-in-out infinite;
     filter: brightness(1.1);
-    mix-blend-mode: screen;
 }
 
 .preloader-bar {
@@ -260,15 +259,13 @@ input, textarea, select {
 }
 
 .nav-logo-img {
-    height: 48px;
+    height: 72px;
     width: auto;
     transition: height var(--transition-base);
-    filter: brightness(1.1);
-    mix-blend-mode: screen;
 }
 
 .navbar.scrolled .nav-logo-img {
-    height: 40px;
+    height: 56px;
 }
 
 .nav-menu {
@@ -1275,11 +1272,9 @@ input, textarea, select {
 }
 
 .footer-logo {
-    height: 56px;
+    height: 72px;
     width: auto;
-    margin-bottom: 20px;
-    filter: brightness(1.1);
-    mix-blend-mode: screen;
+    margin-bottom: 24px;
 }
 
 .footer-brand p {

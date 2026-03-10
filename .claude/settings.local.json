@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npx --version)",
+      "mcp__Claude_Preview__preview_start",
+      "Bash(node --version)",
+      "Bash(brew list)",
+      "Bash(export PATH=\"$HOME/.nvm/versions/node/*/bin:$HOME/.bun/bin:$HOME/.volta/bin:/opt/homebrew/bin:/usr/local/bin:$PATH\")",
+      "Bash(python3 -c \":*)",
+      "Bash(kill %1)",
+      "Bash(lsof -ti:8080)",
+      "Bash(xargs kill)",
+      "Bash(chmod +x \"/Users/enes_oturakci/Desktop/MG WEB SITE/serve.sh\")",
+      "Bash(/tmp/mg-server.py:*)"
+    ]
+  }
+}

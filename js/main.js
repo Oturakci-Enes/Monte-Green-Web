@@ -3,6 +3,28 @@
    ============================================ */
 
 document.addEventListener('DOMContentLoaded', () => {
+    // ---- Theme Toggle ----
+    const themeToggle = document.getElementById('themeToggle');
+    const htmlElement = document.documentElement;
+
+    // Default to light, check for dark preference
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme === 'dark') {
+        htmlElement.setAttribute('data-theme', 'dark');
+    }
+
+    if(themeToggle) {
+        themeToggle.addEventListener('click', () => {
+            if (htmlElement.getAttribute('data-theme') === 'dark') {
+                htmlElement.removeAttribute('data-theme');
+                localStorage.setItem('theme', 'light');
+            } else {
+                htmlElement.setAttribute('data-theme', 'dark');
+                localStorage.setItem('theme', 'dark');
+            }
+        });
+    }
+
     // ---- Preloader ----
     const preloader = document.getElementById('preloader');
     window.addEventListener('load', () => {

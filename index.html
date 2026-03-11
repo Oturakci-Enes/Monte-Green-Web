@@ -23,7 +23,8 @@
     <nav id="navbar" class="navbar">
         <div class="nav-container">
             <a href="#hero" class="nav-logo">
-                <img src="assets/logo-white.png" alt="Monte Green" class="nav-logo-img">
+                <img src="assets/logo.png" alt="Monte Green" class="nav-logo-img theme-light-img">
+                <img src="assets/logo-dark-v2.png" alt="Monte Green" class="nav-logo-img theme-dark-img">
             </a>
             <ul class="nav-menu">
                 <li><a href="#hero" class="nav-link active">Home</a></li>
@@ -35,6 +36,10 @@
             </ul>
             <div class="nav-actions">
                 <a href="#contact" class="btn btn-primary btn-sm">Get a Quote</a>
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle Theme">
+                    <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+                    <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+                </button>
                 <button class="nav-toggle" id="navToggle" aria-label="Menu">
                     <span></span><span></span><span></span>
                 </button>
@@ -60,41 +65,48 @@
             <div class="hero-overlay"></div>
             <div class="hero-particles" id="heroParticles"></div>
         </div>
-        <div class="container hero-content">
-            <div class="hero-badge" data-animate="fade-up">
-                <span class="badge-dot"></span>
-                Premium Quality
+        <div class="container hero-container">
+            <div class="hero-content">
+                <div class="hero-badge" data-animate="fade-up">
+                    <span class="badge-dot"></span>
+                    Premium Quality
+                </div>
+                <h1 class="hero-title" data-animate="fade-up" data-delay="100">
+                    Nature's Freshest<br>
+                    <span class="text-gradient">Fruits & Vegetables</span>
+                </h1>
+                <p class="hero-subtitle" data-animate="fade-up" data-delay="200">
+                    From farm to table, we meticulously select the highest quality fruits and vegetables,
+                    and deliver them to you while preserving their freshness.
+                </p>
+                <div class="hero-actions" data-animate="fade-up" data-delay="300">
+                    <a href="#products" class="btn btn-primary btn-lg">
+                        Discover Our Products
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                    </a>
+                    <a href="#about" class="btn btn-outline btn-lg">Learn More</a>
+                </div>
+                <div class="hero-stats" data-animate="fade-up" data-delay="400">
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="25">0</span><span class="stat-suffix">+</span>
+                        <span class="stat-label">Years Experience</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="500">0</span><span class="stat-suffix">+</span>
+                        <span class="stat-label">Happy Customers</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="150">0</span><span class="stat-suffix">+</span>
+                        <span class="stat-label">Product Varieties</span>
+                    </div>
+                </div>
             </div>
-            <h1 class="hero-title" data-animate="fade-up" data-delay="100">
-                Nature's Freshest<br>
-                <span class="text-gradient">Fruits & Vegetables</span>
-            </h1>
-            <p class="hero-subtitle" data-animate="fade-up" data-delay="200">
-                From farm to table, we meticulously select the highest quality fruits and vegetables,
-                and deliver them to you while preserving their freshness.
-            </p>
-            <div class="hero-actions" data-animate="fade-up" data-delay="300">
-                <a href="#products" class="btn btn-primary btn-lg">
-                    Discover Our Products
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-                </a>
-                <a href="#about" class="btn btn-outline btn-lg">Learn More</a>
-            </div>
-            <div class="hero-stats" data-animate="fade-up" data-delay="400">
-                <div class="stat-item">
-                    <span class="stat-number" data-count="25">0</span><span class="stat-suffix">+</span>
-                    <span class="stat-label">Years Experience</span>
-                </div>
-                <div class="stat-divider"></div>
-                <div class="stat-item">
-                    <span class="stat-number" data-count="500">0</span><span class="stat-suffix">+</span>
-                    <span class="stat-label">Happy Customers</span>
-                </div>
-                <div class="stat-divider"></div>
-                <div class="stat-item">
-                    <span class="stat-number" data-count="150">0</span><span class="stat-suffix">+</span>
-                    <span class="stat-label">Product Varieties</span>
-                </div>
+            <div class="hero-image-wrapper" data-animate="fade-left" data-delay="200">
+                <img src="assets/hero-light.png" alt="Fresh Organic Vegetables" class="hero-side-image theme-light-img">
+                <img src="assets/hero-dark-v2.png" alt="Fresh Organic Vegetables" class="hero-side-image theme-dark-img">
+                <div class="hero-image-backdrop"></div>
             </div>
         </div>
         <div class="hero-scroll">
@@ -152,10 +164,8 @@
                 </div>
                 <div class="about-visual" data-animate="fade-left">
                     <div class="about-image-card">
-                        <div class="image-placeholder">
-                            <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" opacity="0.3"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path><circle cx="12" cy="13" r="4"></circle></svg>
-                            <span>Views from the Farm</span>
-                        </div>
+                        <img src="assets/about-farm-light.png" alt="Views from the Farm" class="about-img theme-light-img">
+                        <img src="assets/about-farm-dark.png" alt="Views from the Farm" class="about-img theme-dark-img">
                         <div class="about-card-accent"></div>
                     </div>
                     <div class="about-experience-badge">
@@ -186,9 +196,8 @@
             <div class="product-grid">
                 <div class="product-card" data-category="fruit" data-animate="fade-up">
                     <div class="product-image">
-                        <div class="product-placeholder">
-                            <span>Pomegranate</span>
-                        </div>
+                        <img src="assets/product-pomegranate-light.png" alt="Pomegranate" class="theme-light-img">
+                        <img src="assets/product-pomegranate.png" alt="Pomegranate" class="theme-dark-img">
                         <div class="product-badge">Premium</div>
                     </div>
                     <div class="product-info">
@@ -203,9 +212,8 @@
 
                 <div class="product-card" data-category="fruit" data-animate="fade-up" data-delay="100">
                     <div class="product-image">
-                        <div class="product-placeholder">
-                            <span>Orange</span>
-                        </div>
+                        <img src="assets/product-orange-light.png" alt="Orange" class="theme-light-img">
+                        <img src="assets/product-orange.png" alt="Orange" class="theme-dark-img">
                     </div>
                     <div class="product-info">
                         <h3>Orange</h3>
@@ -219,9 +227,8 @@
 
                 <div class="product-card" data-category="vegetable" data-animate="fade-up" data-delay="200">
                     <div class="product-image">
-                        <div class="product-placeholder">
-                            <span>Tomato</span>
-                        </div>
+                        <img src="assets/product-tomato-light.png" alt="Tomato" class="theme-light-img">
+                        <img src="assets/product-tomato.png" alt="Tomato" class="theme-dark-img">
                     </div>
                     <div class="product-info">
                         <h3>Tomato</h3>
@@ -235,9 +242,8 @@
 
                 <div class="product-card" data-category="vegetable" data-animate="fade-up" data-delay="300">
                     <div class="product-image">
-                        <div class="product-placeholder">
-                            <span>Pepper</span>
-                        </div>
+                        <img src="assets/product-pepper-light.png" alt="Pepper" class="theme-light-img">
+                        <img src="assets/product-pepper.png" alt="Pepper" class="theme-dark-img">
                     </div>
                     <div class="product-info">
                         <h3>Pepper</h3>
@@ -251,9 +257,8 @@
 
                 <div class="product-card" data-category="exotic" data-animate="fade-up" data-delay="100">
                     <div class="product-image">
-                        <div class="product-placeholder">
-                            <span>Avocado</span>
-                        </div>
+                        <img src="assets/product-avocado-light.png" alt="Avocado" class="theme-light-img">
+                        <img src="assets/product-avocado.png" alt="Avocado" class="theme-dark-img">
                         <div class="product-badge">Exotic</div>
                     </div>
                     <div class="product-info">
@@ -268,9 +273,8 @@
 
                 <div class="product-card" data-category="fruit" data-animate="fade-up" data-delay="200">
                     <div class="product-image">
-                        <div class="product-placeholder">
-                            <span>Apple</span>
-                        </div>
+                        <img src="assets/product-apple-light.png" alt="Apple" class="theme-light-img">
+                        <img src="assets/product-apple.png" alt="Apple" class="theme-dark-img">
                     </div>
                     <div class="product-info">
                         <h3>Apple</h3>
@@ -278,6 +282,51 @@
                         <div class="product-meta">
                             <span class="product-origin">Kent, UK</span>
                             <span class="product-season">Aug - Nov</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card" data-category="fruit" data-animate="fade-up" data-delay="300">
+                    <div class="product-image">
+                        <img src="assets/product-watermelon.png" alt="Watermelon" class="theme-light-img">
+                        <img src="assets/product-watermelon-dark.png" alt="Watermelon" class="theme-dark-img">
+                        <div class="product-badge">Summer</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Watermelon</h3>
+                        <p>Sweet, juicy red watermelon for hot summer days</p>
+                        <div class="product-meta">
+                            <span class="product-origin">Spain</span>
+                            <span class="product-season">May - Sep</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="fruit" data-animate="fade-up" data-delay="100">
+                    <div class="product-image">
+                        <img src="assets/product-lemon.png" alt="Lemon" class="theme-light-img">
+                        <img src="assets/product-lemon-dark.png" alt="Lemon" class="theme-dark-img">
+                    </div>
+                    <div class="product-info">
+                        <h3>Lemon</h3>
+                        <p>Fresh, bright, zestful lemons full of flavor</p>
+                        <div class="product-meta">
+                            <span class="product-origin">Italy</span>
+                            <span class="product-season">All Year</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="vegetable" data-animate="fade-up" data-delay="200">
+                    <div class="product-image">
+                        <img src="assets/product-cucumber-light.png" alt="Cucumber" class="theme-light-img">
+                        <img src="assets/product-cucumber.png" alt="Cucumber" class="theme-dark-img">
+                    </div>
+                    <div class="product-info">
+                        <h3>Cucumber</h3>
+                        <p>Crispy, refreshing, premium grade cucumbers</p>
+                        <div class="product-meta">
+                            <span class="product-origin">UK</span>
+                            <span class="product-season">All Year</span>
                         </div>
                     </div>
                 </div>
@@ -340,34 +389,24 @@
             </div>
             <div class="gallery-grid" data-animate="fade-up">
                 <div class="gallery-item gallery-large">
-                    <div class="gallery-placeholder">
-                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" opacity="0.3"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><polyline points="21 15 16 10 5 21"></polyline></svg>
-                        <span>Fresh Harvest</span>
-                    </div>
+                    <img src="assets/gallery-harvest-light.png" alt="Fresh Harvest" class="gallery-img theme-light-img">
+                    <img src="assets/gallery-harvest-dark.png" alt="Fresh Harvest" class="gallery-img theme-dark-img">
                 </div>
                 <div class="gallery-item">
-                    <div class="gallery-placeholder">
-                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" opacity="0.3"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><polyline points="21 15 16 10 5 21"></polyline></svg>
-                        <span>Packaging</span>
-                    </div>
+                    <img src="assets/gallery-packaging-light.png" alt="Packaging" class="gallery-img theme-light-img">
+                    <img src="assets/gallery-packaging-dark.png" alt="Packaging" class="gallery-img theme-dark-img">
                 </div>
                 <div class="gallery-item">
-                    <div class="gallery-placeholder">
-                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" opacity="0.3"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><polyline points="21 15 16 10 5 21"></polyline></svg>
-                        <span>Quality Control</span>
-                    </div>
+                    <img src="assets/gallery-quality-light.png" alt="Quality Control" class="gallery-img theme-light-img">
+                    <img src="assets/gallery-quality-dark.png" alt="Quality Control" class="gallery-img theme-dark-img">
                 </div>
                 <div class="gallery-item">
-                    <div class="gallery-placeholder">
-                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" opacity="0.3"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><polyline points="21 15 16 10 5 21"></polyline></svg>
-                        <span>Logistics</span>
-                    </div>
+                    <img src="assets/gallery-logistics-light.png" alt="Logistics" class="gallery-img theme-light-img">
+                    <img src="assets/gallery-logistics-dark.png" alt="Logistics" class="gallery-img theme-dark-img">
                 </div>
                 <div class="gallery-item gallery-large">
-                    <div class="gallery-placeholder">
-                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" opacity="0.3"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><polyline points="21 15 16 10 5 21"></polyline></svg>
-                        <span>Product Variety</span>
-                    </div>
+                    <img src="assets/gallery-variety-light.png" alt="Product Variety" class="gallery-img theme-light-img">
+                    <img src="assets/gallery-variety-dark.png" alt="Product Variety" class="gallery-img theme-dark-img">
                 </div>
             </div>
         </div>
